@@ -1,0 +1,135 @@
+body {
+    background-color: #282F3F;
+}
+
+/*NAVBAR SUPERIOR*/
+
+.navbar {
+    background-color: #E7E5E4;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar a{
+    color: #6C676C;
+    font-size: largeR;
+}
+.navbar a:hover{
+    color: #282F3F;
+}
+.logo{
+    width: 5rem;
+}
+.navbar-toggler-icon {
+    background-color: transparent;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30"><path stroke="rgba(40, 47, 63, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22m-22 8h22"></path></svg>');
+}  
+.navbar-toggler{
+    border: none
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.nav-item a {
+    font-weight: bolder;
+}
+
+ /*BANNER*/
+
+.banner {
+    background-image: url(/img/fondo-principal.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #C4AA9B;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-weight: bolder;
+    font-size: 4vw; 
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: flex-start;
+}
+
+
+@media (max-width: 991px){
+    .banner{
+        background-image: url(/img/fondo-secundario.jpg);
+        display: flex;
+        align-items: center; /* Centra verticalmente */
+        justify-content: center; /* Centra horizontalmente */
+        text-align: center;
+        font-size: 6vw;
+        color: #E7E5E4;
+    }
+
+}
+
+/*TRANSFORMA TU FORMA DE APRENDER*/
+
+.forma-aprender{
+    background-color: #282F3F;
+    color: #E7E5E4;
+}
+
+/*BANNER INFERIOR*/
+.banner-secundario{
+    background-image: url(/img/fondo-secundario2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #E7E5E4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    font-weight: bolder;
+    font-size: 4vw;
+    height: 100vh;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: flex-end;
+    text-align: right;
+}
+.banner-secundario .content {
+    padding-right: 20px; /* Ajusta el espaciado a la derecha según sea necesario */
+}
+@media (max-width: 991px){
+    .banner-secundario{
+        background-image: url(/img/fondo-responsive.png);
+        display: flex;
+        align-items: center; /* Centra verticalmente */
+        justify-content: center; /* Centra horizontalmente */
+        text-align: center;
+        font-size: 6vw;
+        color: #E7E5E4;
+    }
+
+}
+
+/*MEJORES CURSOS*/
+
+.cursos-favoritos h2{
+    text-align: center;
+    color: #E7E5E4;
+    font-size: 45px;
+
+}
+.card{
+    background-color: #6C676C;
+    color: #E7E5E4;
+}
+.boton-adop{
+    padding: 2%;
+    border-radius: 5px; 
+    background-color: #E7E5E4; 
+    color: #282F3F; 
+    font-weight: bolder;
+    border: none; 
+    cursor: pointer;
+}
+.boton-adop:hover{
+    background-color: #C4AA9B;
+    border-color: #C4AA9B;
+}
+
+.card img{
+    padding: 3%;
+}
