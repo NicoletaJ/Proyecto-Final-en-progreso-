@@ -1,3 +1,4 @@
+
 body {
     background-color: #282F3F;
 }
@@ -9,13 +10,24 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    font-family:'Sofia Sans Extra Condensed', sans-serif;
+    font-size: larger;
+    font-weight: bold;
+
 }
-.navbar a{
+/* CSS para ocultar la navbar */
+.navbar-hidden {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#navbarNav a{
     color: #6C676C;
     font-size: largeR;
 }
-.navbar a:hover{
+#navbarNav a:hover{
     color: #282F3F;
+    background-color: #C4AA9B;
 }
 .logo{
     width: 5rem;
@@ -38,21 +50,23 @@ body {
 
 .banner {
     background-image: url(/img/fondo-principal.jpg);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #C4AA9B;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     font-weight: bolder;
-    font-size: 4vw; 
+    font-size: 6vw; 
     height: 100vh;
     display: flex;
     align-items: center; /* Centra verticalmente */
     justify-content: flex-start;
+    font-family:'Sofia Sans Extra Condensed', sans-serif;
 }
 
 
-@media (max-width: 991px){
+@media (max-width: 1100px){
     .banner{
         background-image: url(/img/fondo-secundario.jpg);
         display: flex;
@@ -67,14 +81,60 @@ body {
 
 /*TRANSFORMA TU FORMA DE APRENDER*/
 
+.cont-img img{
+    width: 60px;
+}
+
 .forma-aprender{
     background-color: #282F3F;
     color: #E7E5E4;
+}
+.forma-aprender h2{
+    font-size: 50px;
+}
+
+
+.forma-aprender h2, h3 {
+    font-family:'Sofia Sans Extra Condensed', sans-serif;
+    font-weight: bolder;
+}
+.container.pt-5.pb-5.forma-aprender {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container.pt-5.pb-5.forma-aprender .row {
+    width: 100%;
+}
+
+.boton-informacion {
+    display: inline-block;
+    margin-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #E7E5E4; 
+    border-color: #E7E5E4;
+    color: #282F3F;
+    font-family:'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 0;
+}
+.boton-informacion:hover{
+    background-color: #C4AA9B;
+    border-color: #C4AA9B; 
+}
+@media (max-width: 745px){
+    .boton-informacion {
+        padding: 10px;
+    }
 }
 
 /*BANNER INFERIOR*/
 .banner-secundario{
     background-image: url(/img/fondo-secundario2.png);
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -90,8 +150,9 @@ body {
 }
 .banner-secundario .content {
     padding-right: 20px; /* Ajusta el espaciado a la derecha según sea necesario */
+    font-family:'Sofia Sans Extra Condensed', sans-serif;
 }
-@media (max-width: 991px){
+@media (max-width: 1024px){
     .banner-secundario{
         background-image: url(/img/fondo-responsive.png);
         display: flex;
@@ -99,6 +160,15 @@ body {
         justify-content: center; /* Centra horizontalmente */
         text-align: center;
         font-size: 6vw;
+        color: #E7E5E4;
+    }
+    .banner{
+        background-image: url(/img/fondo-secundario.jpg);
+        display: flex;
+        align-items: center; /* Centra verticalmente */
+        justify-content: center; /* Centra horizontalmente */
+        text-align: center;
+        font-size: 7vw;
         color: #E7E5E4;
     }
 
@@ -109,14 +179,30 @@ body {
 .cursos-favoritos h2{
     text-align: center;
     color: #E7E5E4;
-    font-size: 45px;
+    font-size: 50px;
+    font-family:'Sofia Sans Extra Condensed', sans-serif;
+    font-weight: bold;
+}
 
+ul.custom {
+    list-style: none; /* Remover marcadores por defecto */
+    padding-left: 0;
 }
+li i {
+    padding-right: 10px;
+}
+
+
+
 .card{
-    background-color: #6C676C;
+    background-color: #767983;
     color: #E7E5E4;
+    border-radius: 0;
 }
-.boton-adop{
+.card img {
+    filter: brightness(40%);
+}
+.boton-contacto, .boton-info{
     padding: 2%;
     border-radius: 5px; 
     background-color: #E7E5E4; 
@@ -124,12 +210,97 @@ body {
     font-weight: bolder;
     border: none; 
     cursor: pointer;
+    font-family:'Sofia Sans Extra Condensed', sans-serif;
+    font-size: large;
+    border-radius: 0;
 }
-.boton-adop:hover{
+.boton-contacto:hover, .boton-info:hover{
     background-color: #C4AA9B;
     border-color: #C4AA9B;
 }
 
 .card img{
     padding: 3%;
+}
+
+
+/*formulario*/
+
+.formulario-contacto{
+    background-color: #767983;
+    color: #E7E5E4;
+    
+}
+
+.formulario-contacto h2{
+    font-family:'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.formulario-contacto input, .formulario-contacto textarea{
+    border-radius: 0;
+}
+
+.formulario-contacto label{
+    font-family:'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 25px;
+}
+
+.boton-enviar{
+    display: inline-block;
+    margin-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #E7E5E4; 
+    border-color: #E7E5E4;
+    color: #282F3F;
+    font-family:'Sofia Sans Extra Condensed', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 0;
+}
+
+.boton-enviar:hover{
+    background-color: #C4AA9B;
+    border-color: #C4AA9B; 
+}
+
+.error-message{
+    color: #282F3F;
+    font-weight: bolder;
+}
+.form-control {
+    border-width: 3px;
+    border-color: transparent;
+}
+
+.form-control:focus {
+    border-color: #282F3F;
+    box-shadow: none;
+}
+
+/*logo inferior*/
+.logo-inferior{
+    background-color: #E7E5E4;
+    text-align: center;
+}
+.logo-inferior img{
+    width: 200px;
+}
+
+.footer-post-logo{
+    background-color: #282F3F;
+    color: #E7E5E4;
+    font-family:'Sofia Sans Extra Condensed', sans-serif;
+    font-weight: bolder;
+    font-size: large;
+    
+}
+.footer-post-logo a{
+    color: #E7E5E4;
+    text-decoration: none;
+}
+
+.footer-post-logo a:hover{
+    color: #C4AA9B;
 }

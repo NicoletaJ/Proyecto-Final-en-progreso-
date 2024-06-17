@@ -9,8 +9,12 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/074d52a0fb.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="icon" type="image/x-icon" href="/img/logo-pequeño.png">
+    <script src="/js/main.js"></script>
     <title>Proyecto final</title>
 </head>
 <body>
@@ -41,81 +45,83 @@
         </div>
     </nav>
     <div class="container-fluid banner">
-      <div class="row">
-        <div class="col-lg-5">
-            <p>FORMACIÓN ONLINE ESPECIALIZADA</p>
-        </div>
-      </div>
+            <p>FORMACIÓN ONLINE <br> ESPECIALIZADA</p>
     </div>
   <div class="container pt-5 pb-5 forma-aprender">
-    <h2>TRANSFORMA TU FORMA DE APRENDER</h2>
+    <h2 class="pb-3">TRANSFORMA TU FORMA DE APRENDER</h2>
         <div class="row">
           <div class="col-12 col-md-4 item">
               <div class="cont-img">
-                  <img class="pt-2 pb-2" src="/img/globo.png" alt="" width="60px">
+                  <img class="pt-2 pb-2" src="/img/globo.png" alt="">
               </div>
               <h3>100% online y a tu ritmo</h3>
               <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa deleniti tempore atque odio iusto soluta harum cum quam tenetur perferendis molestias eveniet, excepturi mollitia reiciendis expedita optio, corporis architecto! Facere.</p>
           </div>
           <div class="col-12 col-md-4 item">
             <div class="cont-img">
-              <img class="pt-2 pb-2" src="/img/estrella.png" alt="" width="60px">
+              <img class="pt-2 pb-2" src="/img/estrella.png" alt="">
             </div>
             <h3>Experiencia transformada</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa deleniti tempore atque odio iusto soluta harum cum quam tenetur perferendis molestias eveniet, excepturi mollitia reiciendis expedita optio, corporis architecto! Facere.</p>
           </div>
           <div class="col-12 col-md-4 item">
             <div class="cont-img">
-              <img class="pt-2 pb-2" src="/img/grafica.png" alt="" width="60px">
+              <img class="pt-2 pb-2" src="/img/grafica.png" alt="">
             </div>
             <h3>Materiales descargables</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa deleniti tempore atque odio iusto soluta harum cum quam tenetur perferendis molestias eveniet, excepturi mollitia reiciendis expedita optio, corporis architecto! Facere.</p>
           </div>
           <div class="col-12 col-md-4 item">
             <div class="cont-img">
-              <img class="pt-2 pb-2" src="/img/ordenador.png" alt="" width="60px">
+              <img class="pt-2 pb-2" src="/img/ordenador.png" alt="">
             </div>
             <h3>Tutorias y seguimiento</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa deleniti tempore atque odio iusto soluta harum cum quam tenetur perferendis molestias eveniet, excepturi mollitia reiciendis expedita optio, corporis architecto! Facere.</p>
           </div>
           <div class="col-12 col-md-4 item">
             <div class="cont-img">
-              <img class="pt-2 pb-2" src="/img/bombilla.png" alt="" width="60px">
+              <img class="pt-2 pb-2" src="/img/bombilla.png" alt="">
             </div>
             <h3>Autoevaluación</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa deleniti tempore atque odio iusto soluta harum cum quam tenetur perferendis molestias eveniet, excepturi mollitia reiciendis expedita optio, corporis architecto! Facere.</p>
           </div>
           <div class="col-12 col-md-4 item">
             <div class="cont-img">
-              <img class="pt-2 pb-2" src="/img/premio.png" alt="" width="60px">
+              <img class="pt-2 pb-2" src="/img/premio.png" alt="">
             </div>
             <h3>Formacion especializada</h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa deleniti tempore atque odio iusto soluta harum cum quam tenetur perferendis molestias eveniet, excepturi mollitia reiciendis expedita optio, corporis architecto! Facere.</p>
           </div>
-          
         </div>
+        <a href="#formulario" class="btn btn-primary boton-informacion">SOLICITA MÁS INFORMACIÓN</a>
   </div>
   <div class="container-fluid banner-secundario">
       <div class="content">
           <p>Aprende a Tu Ritmo, <br>Crece Sin Límites</p>
       </div>
   </div>
-  <div class="container cursos-favoritos">
+<div class="container cursos-favoritos">
     <h2 class="pt-5">Los cursos más vendidos</h2>
     <div class="container py-5">
-      <div class="row row-cols-1 row-cols-lg-3 g-4 py-5">
-
+      <div class="row row-cols-1 row-cols-lg-3 g-4">
           <div class="col">
               <div class="card">
                   <img src="/img/diseño-grafico.jpg" class="card-img-top" alt="Diseño gráfico profesional">
                   <div class="card-body">
                       <h3 class="card-text"><strong>DISEÑO GRÁFICO PROFESIONAL</strong></h3>
-                      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique inventore sint fuga ipsa culpa, quidem, beatae distinctio iure voluptas quo corrupti nobis eaque doloribus nisi laboriosam corporis voluptates unde! Iure.</P>
+                      <ul class="custom">
+                        <li> <i class="fa-solid fa-check"></i>50 horas</li>
+                        <li> <i class="fa-solid fa-check"></i>10 módulos/ webinars</li>
+                        <li> <i class="fa-solid fa-check"></i>4 tutorías de 1 hora</li>
+                        <li> <i class="fa-solid fa-check"></i>Examen tipo test y proyecto</li>
+                        <li> <i class="fa-solid fa-check"></i>Videos extra</li>
+                        <li> <i class="fa-solid fa-check"></i>Conexión de 60 a 120 min a la semana</li>
+                      </ul>
                   </div>
                   <div class="mb-5 d-flex justify-content-around">
-                      <a href="/html/diseño-grafico.html" class="btn btn-primary boton-adop">+ INFO</a>
-                      <a href="mailto:nicoletajosanu@gmail.com" class="btn btn-primary boton-adop">CONTACTO</a>
-                  </div>
+                    <a href="/html/cone3.html" class="btn btn-primary boton-info">+ INFO</a>
+                    <a href="mailto:nicoletajosanu@gmail.com" class="btn btn-primary boton-contacto">CONTACTO</a>
+                </div>
               </div>
           </div>
 
@@ -124,12 +130,19 @@
                   <img src="/img/ingles-empresarial.png" class="card-img-top" alt="Traducción Médica">
                   <div class="card-body">
                       <h3><strong>INGLÉS EMPRESARIAL</strong></h3>
-                      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique inventore sint fuga ipsa culpa, quidem, beatae distinctio iure voluptas quo corrupti nobis eaque doloribus nisi laboriosam corporis voluptates unde! Iure. Nisi sisi corporis voluptasisi laboriosam corporis voluptates unde! Iure.</P>
+                      <ul class="custom">
+                        <li><i class="fa-solid fa-check"></i>50 horas</li>
+                        <li><i class="fa-solid fa-check"></i>10 módulos/ webinars</li>
+                        <li><i class="fa-solid fa-check"></i>4 tutorías de 1 hora</li>
+                        <li><i class="fa-solid fa-check"></i>Examen tipo test y proyecto</li>
+                        <li><i class="fa-solid fa-check"></i>Videos extra</li>
+                        <li><i class="fa-solid fa-check"></i>Conexión de 60 a 120 min a la semana</li>
+                      </ul>
                   </div>
                   <div class="mb-5 d-flex justify-content-around">
-                      <a href="/html/cone2.html" class="btn btn-primary boton-adop">+ INFO</a>
-                      <a href="mailto:nicoletajosanu@gmail.com" class="btn btn-primary boton-adop">CONTACTO</a>
-                  </div>
+                    <a href="/html/cone3.html" class="btn btn-primary boton-info">+ INFO</a>
+                    <a href="mailto:nicoletajosanu@gmail.com" class="btn btn-primary boton-contacto">CONTACTO</a>
+                </div>
               </div>
           </div>
           <div class="col">
@@ -137,15 +150,65 @@
                   <img src="/img/finanzas-personales.png" class="card-img-top" alt="Traducción Médica">
                   <div class="card-body">
                       <h3><strong>FINANZAS PERSONALES</strong></h3>
-                      <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore maiores atque veniam consequatur ipsum aut amet quae consectetur! Ullam maiores maxime dicta consequuntur architecto, odio natus quam distinctio doloribus voluptatem!</P>
+                      <ul class="custom">
+                        <li><i class="fa-solid fa-check"></i>50 horas</li>
+                        <li><i class="fa-solid fa-check"></i>10 módulos/ webinars</li>
+                        <li><i class="fa-solid fa-check"></i>4 tutorías de 1 hora</li>
+                        <li><i class="fa-solid fa-check"></i>Examen tipo test y proyecto</li>
+                        <li><i class="fa-solid fa-check"></i>Videos extra</li>
+                        <li><i class="fa-solid fa-check"></i>Conexión de 60 a 120 min a la semana</li>
+                      </ul>
                   </div>
                   <div class="mb-5 d-flex justify-content-around">
-                      <a href="/html/cone3.html" class="btn btn-primary boton-adop">+ INFO</a>
-                      <a href="mailto:nicoletajosanu@gmail.com" class="btn btn-primary boton-adop">CONTACTO</a>
+                      <a href="/html/cone3.html" class="btn btn-primary boton-info">+ INFO</a>
+                      <a href="mailto:nicoletajosanu@gmail.com" class="btn btn-primary boton-contacto">CONTACTO</a>
                   </div>
+                </div>
+            </div>
+       </div>
+    </div>
+</div>
+
+<div class="container pt-5 pb-4 formulario-contacto" id="formulario">
+  <h2 class="text-center">CONTACTA CON NOSOTROS</h2>
+  <div class="row">
+      <div class="col-12 col-md-6 offset-md-3">
+          <form action="https://httpbin.org/post" name="formulario-contacto" method="post" id="contactForm">
+              <div class="form-group">
+                  <label for="nombre">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Introduce tu nombre" required onfocus="handleFocus(this)" onblur="handleBlur(this)">
+                  <div class="error-message" id="nombreError"></div>
               </div>
-          </div>
+              <div class="form-group">
+                  <label for="apellidos">Apellidos</label>
+                  <input type="text" class="form-control" id="apellidos" placeholder="Introduce tus apellidos" required onfocus="handleFocus(this)" onblur="handleBlur(this)">
+                  <div class="error-message" id="apellidosError"></div>
+              </div>
+              <div class="form-group">
+                  <label for="telefono">Número de Teléfono</label>
+                  <input type="tel" class="form-control" id="telefono" placeholder="Introduce tu número de teléfono" required onfocus="handleFocus(this)" onblur="handleBlur(this)">
+                  <div class="error-message" id="telefonoError"></div>
+              </div>
+              <div class="form-group">
+                  <label for="correo">Correo Electrónico</label>
+                  <input type="email" class="form-control" id="correo" placeholder="Introduce tu correo electrónico" required onfocus="handleFocus(this)" onblur="handleBlur(this)">
+                  <div class="error-message" id="correoError"></div>
+              </div>
+              <div class="form-group">
+                  <label for="texto">Escribe tu mensaje</label>
+                  <textarea class="form-control" id="texto" rows="3" placeholder="Escribe tu mensaje" required onfocus="handleFocus(this)" onblur="handleBlur(this)"></textarea>
+                  <div class="error-message" id="textoError"></div>
+              </div>
+              <button type="submit" class="btn btn-primary boton-enviar mx-auto d-block">Enviar</button>
+          </form>
+      </div>
   </div>
-  
+</div>
+<div class="logo-inferior container-fluid mt-5 pt-1 pb-1">
+         <img src="/img/logo.png" alt="">
+</div>
+<footer class="footer-post-logo pt-3 text-center">
+  <p>EDUFLEX | <a href="#">AVISO LEGAL, DE PRIVACIDAD Y COOKIES </a>| <a href="#">BUZÓN DE SUGERENCIAS</a></p>
+</footer>
 </body>
 </html>
