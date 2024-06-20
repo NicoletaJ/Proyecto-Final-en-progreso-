@@ -13,39 +13,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="icon" type="image/x-icon" href="/img/logo-pequeño.png">
+    <link rel="icon" type="image/x-icon" href="/img/logo2.png">
     <script src="/js/main.js"></script>
     <title>Proyecto final</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="/img/logo.png" alt="Logo" class="logo" width="100">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#inicio">Inicio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/html/cursos.html">Cursos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/html/contacto.html">Contacto</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/html/login.html">Log In</a>
-                  </li>
-                </ul>
-              </div>
-        </div>
-    </nav>
+  <nav class="navbar navbar-expand-sm">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="/img/logo.png" alt="Logo" class="logo" width="100">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="/html/cursos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Cursos</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Tecnología y Programación</a>
+                    <a class="dropdown-item" href="#">Negocios y Emprendimiento</a>
+                    <a class="dropdown-item" href="#">Desarrollo Personal</a>
+                    <a class="dropdown-item" href="#">Arte y Creatividad</a>
+                    <a class="dropdown-item" href="#">Salud y Bienestar</a>
+                    <a class="dropdown-item" href="#">Idiomas</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/login.html">Log In</a>
+              </li>
+            </ul>
+          </div>
+    </div>
+</nav>
     <div class="container-fluid banner">
-            <p>FORMACIÓN ONLINE <br> ESPECIALIZADA</p>
+            <p>Conviértete en un genio <br>desde el sofá</p>
     </div>
   <div class="container pt-5 pb-5 forma-aprender">
     <h2 class="pb-3">TRANSFORMA TU FORMA DE APRENDER</h2>
@@ -97,7 +105,7 @@
   </div>
   <div class="container-fluid banner-secundario">
       <div class="content">
-          <p>Aprende a Tu Ritmo, <br>Crece Sin Límites</p>
+          <p>Aprender nunca fue <br>tan cómodo</p>
       </div>
   </div>
 <div class="container cursos-favoritos">
@@ -108,7 +116,7 @@
               <div class="card">
                   <img src="/img/diseño-grafico.jpg" class="card-img-top" alt="Diseño gráfico profesional">
                   <div class="card-body">
-                      <h3 class="card-text"><strong>DISEÑO GRÁFICO PROFESIONAL</strong></h3>
+                      <h3 class="card-text"><strong>DISEÑO GRÁFICO</strong></h3>
                       <ul class="custom">
                         <li> <i class="fa-solid fa-check"></i>50 horas</li>
                         <li> <i class="fa-solid fa-check"></i>10 módulos/ webinars</li>
@@ -124,7 +132,6 @@
                 </div>
               </div>
           </div>
-
           <div class="col">
               <div class="card">
                   <img src="/img/ingles-empresarial.png" class="card-img-top" alt="Traducción Médica">
@@ -204,11 +211,33 @@
       </div>
   </div>
 </div>
-<div class="logo-inferior container-fluid mt-5 pt-1 pb-1">
-         <img src="/img/logo.png" alt="">
+<div class="logo-inferior container-fluid mt-5 pt-5 pb-5">
+         <img src="/img/logo-pequeño.png" alt="">
 </div>
 <footer class="footer-post-logo pt-3 text-center">
-  <p>EDUFLEX | <a href="#">AVISO LEGAL, DE PRIVACIDAD Y COOKIES </a>| <a href="#">BUZÓN DE SUGERENCIAS</a></p>
+  <div class="container">
+      <div class="row">
+          <div class="col-12 col-lg-4">
+            <h4>Sobre nosotros</h4>
+            <p><a href="#">Aviso Legal</a></p>
+            <p><a href="#">Política de privacidad</a></p>
+            <p><a href="#">Política de cookies</a></p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h4>Forma parte de Edu Flex</h4>
+            <p><a href="#">Contacto</a></p>
+            <p><a href="#">Opiniones</a></p>
+            <p><a href="#">Trabaja con nosotros</a></p>
+          </div>
+          <div class="col-12 col-lg-4">
+            <h4>Síguenos</4>
+            <div class="wrapper pt-3">
+              <p><a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a></p>
+              <p><a href="#" class="icon"><i class="fa-brands fa-x-twitter"></i></a></p>
+            </div>
+          </div>
+      </div>
+  </div>
 </footer>
 </body>
 </html>
