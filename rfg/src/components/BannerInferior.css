@@ -1,0 +1,38 @@
+.banner-inferior {
+    color: #ffffff;display: flex; /* Activar Flexbox */
+    flex-direction: column; /* Alinear elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    text-align: center; /* Centrar texto dentro de los elementos */
+    padding: 0 20px; /* Añadir un poco de padding para margen lateral */
+    box-sizing: border-box;
+    background-image: url(/public/img/banner-inferior.png);
+}
+
+.banner-inferior .boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #ffffff; 
+    border-color: #8C7A70;
+    color: #333333;
+    font-family: "Staatliches", sans-serif;
+    font-size: 25px;
+    border-radius: 2;
+}
+
+.banner-inferior .boton:hover {
+    background-color: #8C7A70;
+    border-color: #8C7A70; 
+    color: #ffffff;
+
+}

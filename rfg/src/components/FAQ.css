@@ -1,0 +1,85 @@
+/* Contenedor principal */
+.faq-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+}
+
+.faq-container h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo del contenedor de preguntas (usamos Grid) */
+.faq-list {
+    display: grid;
+    grid-template-columns: 1fr; /* Una columna por defecto */
+    gap: 20px; /* Espacio entre las preguntas */
+}
+
+/* En pantallas grandes, mostrar dos columnas */
+@media (min-width: 768px) {
+    .faq-list {
+        grid-template-columns: 1fr 1fr; /* Dos columnas cuando el ancho de pantalla es mayor a 768px */
+    }
+}
+
+/* Estilo para cada item del FAQ */
+.faq-item {
+    margin-bottom: 15px;
+}
+
+/* Estilo del botón de la pregunta */
+.faq-question {
+    width: 100%;
+    background-color: #CCCCCC;
+    color: #000000;
+    padding: 15px 20px;
+    border: none;
+    outline: none;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: #4D4D4D; /* Cambiar color al pasar el ratón */
+    color: #ffffff;
+}
+
+/* Flecha que rota */
+.faq-question .arrow {
+    transition: transform 0.3s ease;
+}
+
+.faq-question .arrow.rotate {
+    transform: rotate(180deg); /* Rota la flecha hacia arriba */
+}
+
+/* Estilo para la respuesta */
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    background-color: #f8f9fa;
+    padding: 0 20px;
+}
+
+.faq-answer.show {
+    max-height: 200px; /* Ajusta el tamaño máximo según el contenido */
+    padding: 20px;
+    /* Eliminamos las líneas laterales */
+}
+
+.faq-answer p {
+    margin: 0;
+    color: #555;
+}

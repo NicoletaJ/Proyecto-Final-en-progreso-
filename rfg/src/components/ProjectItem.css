@@ -1,0 +1,63 @@
+/* Estilos generales para enlaces de proyectos */
+.ejemplo-proyectos a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Ajustar márgenes y padding en los contenedores */
+.ejemplo-proyectos .row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.ejemplo-proyectos .col-md-4 {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Estilo general para el contenedor del proyecto */
+.project-item {
+    display: flex; /* Activar Flexbox */
+    flex-direction: column; /* Alinear elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    height: 100vh; /* Altura completa del viewport */
+    color: #ffffff; /* Color del texto */
+    font-family: "Roboto", sans-serif; /* Fuente personalizada */
+    letter-spacing: 3px; /* Espaciado de letras */
+    text-align: center; /* Centrar texto */
+    background-blend-mode: darken; /* Aplicar mezcla para oscurecer la imagen */
+    background-color: rgba(0, 0, 0, 0.6); /* Capa semitransparente para oscurecer */
+}
+
+/* Estilo específico para cada tipo de proyecto */
+.vivienda-moderna {
+    background-image: url('/public/img/proyecto-moderno.png'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+.edificio-viena {
+    background-image: url('/public/img/edificio-viena.png'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+.vivienda-rustica {
+    background-image: url('/public/img/vivienda-rustica.png'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Ajustar el efecto hover para resaltar la imagen */
+.project-item:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Oscurecer más al pasar el cursor */
+}
+
+
+.project-item h4{
+    font-size: 50px;
+    font-family: "Staatliches", sans-serif;
+}

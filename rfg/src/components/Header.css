@@ -1,0 +1,37 @@
+/* Estilo general para el header */
+.navegacion-superior {
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #CCCCCC;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: "Staatliches", sans-serif;
+    font-size: larger;
+}
+
+/* Estilo para el logo */
+.header-logo {
+   font-family: "Staatliches", sans-serif; /* Fuente para el logo */
+    font-size: 1.5rem;
+}
+
+/* Estilo para los enlaces de navegación */
+.link-nav-superior {
+    margin-left: 20px;
+    font-family: 'Staatliches', sans-serif; /* Fuente Staatliches para los enlaces */
+    text-transform: uppercase; /* Transformar a mayúsculas */
+    color: #333333; /* Color de los enlaces */
+}
+
+
+
+.navbar.navbar-expand-lg .navbar-toggler[aria-controls="navbarNav"] {
+    border: none; /* Eliminar borde */
+    outline: none; /* Eliminar contorno */
+    box-shadow: none; /* Eliminar sombra */
+    padding: 0; /* Eliminar padding adicional */
+    background-color: transparent; /* Asegura que el fondo sea transparente */
+}
+
+
