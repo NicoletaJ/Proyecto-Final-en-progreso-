@@ -1,0 +1,46 @@
+/* Estilos generales para enlaces de proyectos */
+.ejemplo-proyectos a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.project-item {
+    display: flex; /* Activar Flexbox */
+    flex-direction: column; /* Alinear elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    height: 100vh; /* Altura completa del viewport */
+    color: #ffffff; /* Color del texto */
+    font-family: "Roboto", sans-serif; /* Fuente personalizada */
+    letter-spacing: 3px; /* Espaciado de letras */
+    text-align: center; /* Centrar texto */
+}
+
+/* Estilo específico para cada tipo de proyecto */
+.vivienda-moderna {
+    background-image: url('/public/img/proyecto-moderno.png'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+.edificio-viena {
+    background-image: url('/public/img/edificio-viena.png'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+.vivienda-rustica {
+    background-image: url('/public/img/vivienda-rustica.png'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
+}
+
+/* Ajustar el espaciado para los elementos en la página */
+.ejemplo-proyectos .row {
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar padding */
+}
+
+.ejemplo-proyectos .col-md-4 {
+    padding: 0; /* Eliminar padding entre columnas */
+}

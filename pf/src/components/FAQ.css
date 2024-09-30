@@ -1,0 +1,22 @@
+aside{
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.accordion-item {
+    background-color: #8C7A70;
+}
+
+.accordion-button{
+    padding: 2% 13%;
+    border-radius: 2px; 
+    background-color: #E0E0E0; 
+    color: rgb(0, 0, 0); 
+    border: none; 
+    cursor: pointer;
+    position: relative; 
+}
+    
+.accordion-button:hover {
+    opacity: 0.9;
+}

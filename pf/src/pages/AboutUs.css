@@ -1,0 +1,30 @@
+.banner{
+    background-image: url(/public/img/banner-inferior.png);
+    display: flex; /* Activar Flexbox */
+    flex-direction: column; /* Alinear elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    background-image: url('/public/img/banner-principal1.png');
+    background-color: rgba(0, 0, 0, 0.6);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    text-align: center; /* Centrar texto dentro de los elementos */
+    padding: 0 20px; /* Añadir un poco de padding para margen lateral */
+    box-sizing: border-box; /* Asegura que padding no afecte al 100% del height */
+}
+
+
+.banner h2 {
+    font-family: 'Staatliches', sans-serif;
+    letter-spacing: 5px;
+}
+
+.nuestra-filosofia img {
+    width: 100%;
+}

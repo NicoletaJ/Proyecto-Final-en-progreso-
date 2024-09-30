@@ -1,0 +1,21 @@
+/* Estilo para la sección de información post contador */
+.informacion-post-contador .boton {
+    display: inline-block;
+    margin-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #ffffff; 
+    border-color: #8C7A70;
+    color: #333333;
+    font-family: "Staatliches", sans-serif;
+    font-size: 25px;
+    border-radius: 2;
+}
+
+.informacion-post-contador .boton:hover {
+    background-color: #8C7A70;
+    border-color: #8C7A70; 
+
+}
+
+

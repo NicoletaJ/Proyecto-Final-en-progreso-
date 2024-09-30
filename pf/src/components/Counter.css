@@ -1,0 +1,31 @@
+/* Estilos para el contenedor de los contadores */
+.counter-column {
+    padding: 20px;
+    position: relative;
+}
+
+.counter p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+}
+
+/* Estilos para el valor del contador */
+.counter-value {
+    font-size: 3rem;
+    color: #8C7A70;
+    margin-top: 10px;
+}
+
+/* Línea vertical entre los contadores */
+.counter-column:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 2px;
+    background-color: #8C7A70; 
+    height: 100%;
+}
