@@ -1,0 +1,136 @@
+.banner{
+   
+    display: flex; /* Activar Flexbox */
+    flex-direction: column; /* Alinear elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    background-image: url('/public/img/quienes-somos.png');
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    text-align: center; /* Centrar texto dentro de los elementos */
+    padding: 0 20px; /* Añadir un poco de padding para margen lateral */
+    box-sizing: border-box; /* Asegura que padding no afecte al 100% del height */
+}
+
+.banner-pre-equipo {
+    display: flex; /* Activar Flexbox */
+    flex-direction: column; /* Alinear elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    background-color: #333333;
+    height: 60vh;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Roboto', sans-serif;
+
+    text-align: center; /* Centrar texto dentro de los elementos */
+    padding: 0 20px; /* Añadir un poco de padding para margen lateral */
+    box-sizing: border-box; /* Asegura que padding no afecte al 100% del height */
+}
+.banner-pre-equipo h1{
+    letter-spacing: 5px;
+}
+
+.banner h2 {
+    font-family: 'Staatliches', sans-serif;
+    letter-spacing: 5px;
+}
+.row h2 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.nuestra-filosofia img {
+    width: 100%;
+}
+.nuestros-origenes img {
+    width: 100%;
+}
+
+
+/* Estilos para la sección del equipo */
+.team-section {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.team-box {
+    padding: 15px;
+}
+
+/* Hacer que las cajas sean perfectamente cuadradas */
+.team-item {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Relación de aspecto 1:1 para hacerlas cuadradas */
+    background-size: cover; /* Ajuste de imagen de fondo */
+    background-position: center;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover para oscurecer y mostrar texto */
+.team-item:hover {
+    transform: scale(1.05);
+}
+
+.team-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(140, 122, 112, 0.8);
+    color: white;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.team-item:hover .team-hover {
+    opacity: 1;
+}
+
+.team-hover h4 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.team-hover p {
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+/* Cuadro de "Equipo" */
+.equipo-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: rgb(0, 0, 0);
+    height: 100%;
+}
+.equipo-text:hover {
+    background-color: #8C7A70;
+    color: #ffffff;
+}
+
+.equipo-text h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
