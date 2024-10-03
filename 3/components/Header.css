@@ -1,0 +1,92 @@
+/* Estilo general para el header */
+.navegacion-superior {
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: #CCCCCC;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-family: "Staatliches", sans-serif;
+    font-size: larger;
+}
+
+/* Estilo para el logo */
+.header-logo {
+   font-family: "Staatliches", sans-serif;
+   font-size: 1.5rem;
+}
+
+/* Estilo para los enlaces de navegación */
+.link-nav-superior {
+    margin-left: 20px;
+    font-family: 'Staatliches', sans-serif;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+/* Estilo hover para los enlaces normales */
+.link-nav-superior:hover {
+    color: #555555;
+    background-color: rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+/* Efecto hover en el botón de contacto */
+.link-nav-superior.contact-link {
+    background-color: #333333;
+    color: #ffffff;
+    border: 2px solid #333333;
+}
+.link-nav-superior.contact-link:visited{
+    color: white;
+}
+
+.link-nav-superior.contact-link:hover {
+    background-color: #cccccc;
+    color: #333333;
+    border: 2px solid #333333;
+    transition: all 0.3s ease;
+}
+
+
+/* Estilo para el toggler del navbar */
+.navbar.navbar-expand-lg .navbar-toggler[aria-controls="navbarNav"] {
+    border: none;
+    outline: none;
+    box-shadow: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+/* Alinear el menú a la derecha cuando el toggler está activo */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        text-align: right;
+    }
+
+    .navbar-collapse.show {
+        justify-content: flex-end;
+    }
+
+    /* Quitar el borde y el hover en el menú colapsado */
+    .navbar-collapse.show .link-nav-superior,
+    .navbar-collapse.show .link-nav-superior.contact-link {
+        border: none;
+        background-color: transparent;
+        
+    }
+    .link-nav-superior.contact-link {
+        color: #000000;
+        font-weight: bold;
+    }
+
+    .navbar-collapse.show .link-nav-superior:hover,
+    .navbar-collapse.show .link-nav-superior.contact-link:hover {
+        background-color: transparent;
+        color: inherit;
+    }
+}
