@@ -1,0 +1,53 @@
+/* Estilos para el contenedor de los contadores */
+.counter-column {
+    padding: 20px;
+    position: relative;
+}
+
+.counter p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333333;
+    text-align: center;
+}
+
+/* Estilos para el valor del contador */
+.counter-value {
+    font-size: 3rem;
+    color: #8C7A70;
+    margin-top: 10px;
+}
+
+/* Línea vertical entre los contadores */
+.counter-column:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 2px;
+    background-color: #8C7A70; 
+    height: 100%;
+}
+
+/* Media query para pantallas pequeñas (768px o menos) */
+@media (max-width: 768px) {
+    /* Los contadores se apilan verticalmente */
+    .row {
+        flex-direction: column;
+    }
+
+    /* Ocultar las líneas decorativas en pantallas pequeñas */
+    .counter-column::after {
+        display: none;
+    }
+
+    /* Ajustar el tamaño del texto para pantallas pequeñas */
+    .counter-value {
+        font-size: 2.5rem; /* Reduce un poco el tamaño del contador */
+    }
+
+    .counter p {
+        font-size: 1.5rem; /* Reduce el tamaño del texto en pantallas pequeñas */
+    }
+}

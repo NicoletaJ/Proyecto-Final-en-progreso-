@@ -1,0 +1,87 @@
+.banner-proyectos{
+   
+    display: flex; /* Activar Flexbox */
+    flex-direction: column; /* Alinear elementos en columna */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    background-color: #8c7a70;
+    height: 50vh;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: 'Roboto', sans-serif;
+
+    text-align: center; /* Centrar texto dentro de los elementos */
+    padding: 0 20px; /* Añadir un poco de padding para margen lateral */
+    box-sizing: border-box; 
+    letter-spacing: 5px;
+}
+.banner-proyectos h1 {
+    font-size: 400%;
+}
+
+/* Estilos generales para enlaces de proyectos */
+.ejemplo-proyectos a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+/* Estilo general para el contenedor del proyecto */
+.project-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 3px;
+    text-align: center;
+    background-blend-mode: darken;
+    background-size:cover;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Ajustar el efecto hover para resaltar la imagen */
+.project-item:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Oscurecer más al pasar el cursor */
+}
+
+.project-item h4 {
+    font-size: 50px;
+    font-family: "Staatliches", sans-serif;
+}
+
+/* Ajuste para asegurarse de que las imágenes de fondo no se solapen y haya espacio */
+.project-item {
+    margin-bottom: 20px; /* Espacio entre los items */
+}
+
+/* Estilos personalizados para los botones */
+button.boton {
+    background-color: #4d4d4d; /* Cambia el color de fondo */
+    color: #ffffff; /* Color del texto */
+    border: 2px solid #4d4d4d; /* Color del borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 20px; /* Añade un relleno interno */
+    transition: all 0.3s ease; /* Efecto de transición al pasar el cursor */
+    font-size: 1.1rem; /* Tamaño de la fuente */
+    text-transform: uppercase; /* Transformar el texto a mayúsculas */
+    letter-spacing: 1px; /* Espaciado entre letras */
+}
+
+/* Efecto hover para los botones */
+button.boton:hover {
+    background-color: #ffffff; /* Fondo blanco al pasar el cursor */
+    color: #000000; /* Color del texto */
+    border-color: #4d4d4d; /* Mantener el borde del mismo color */
+}
+
+/* Ajustes para asegurar la legibilidad y la presentación */
+.boton:focus,
+.boton:active {
+    outline: none; /* Eliminar el contorno azul de los botones */
+    box-shadow: none; /* Eliminar el sombreado del foco */
+}

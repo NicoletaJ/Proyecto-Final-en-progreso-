@@ -1,0 +1,36 @@
+footer{
+    display: block; /* Activar Flexbox */
+    flex-direction:row; /* Alinear elementos en columna */
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: "Staatliches", sans-serif;
+    font-size: 13px;
+    background-color: #CCCCCC;
+    
+}
+
+footer ul {
+    list-style: none;
+}
+footer a {
+    text-decoration: none;
+    color: #000000;
+}
+
+footer a:hover{
+    font-weight: bold;
+}
+
+
+
+    
+.footer img{
+    width: 30%; 
+    padding: 2%;
+}
+
+ul h5 {
+    font-size: 20px;
+    color: #333333;
+}

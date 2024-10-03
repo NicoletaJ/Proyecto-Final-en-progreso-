@@ -1,0 +1,22 @@
+/* Aplicar fuentes globalmente o a elementos específicos */
+body {
+  font-family: 'Roboto', sans-serif; /* Fuente predeterminada para todo el cuerpo */
+}
+
+/* Aplicar la fuente 'Abril Fatface' a elementos específicos */
+h1, h2, h3 {
+  font-family: 'Staatliches', sans-serif;
+  letter-spacing: 3px;
+}
+
+/* Aplicar la fuente 'Staatliches' a elementos específicos */
+.navbar, .banner-superior h2 {
+  font-family: 'Staatliches', sans-serif;
+}
+
+/* Personalizar la fuente para párrafos o cualquier otro elemento */
+p, li, a {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; /* Peso de la fuente Roboto */
+}
+

@@ -1,0 +1,19 @@
+/* Elimina el espacio a los lados del BannerInferior */
+.banner-inferior-wrapper {
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    margin-left: calc(-50vw + 50%); /* Centra el banner sin márgenes */
+}
+
+.project-gallery img {
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.banner-inferior-wrapper {
+    padding: 0; /* Elimina el padding de los lados */
+}
+h4{
+    font-family: "Staatliches", sans-serif;
+    padding-top: 10%;
+}
